@@ -36,7 +36,7 @@ if [ "$can_windows" == "true" ]; then
         echo "Failed to compile Windows x64 executable"
         exit 1
     else
-        zip -r -9 build/windows-x64.zip build/linux/x64/Password\ Generator
+        zip -r -9 build/windows-x64.zip build/windows/x64/Password\ Generator.exe
     fi
 
     i686-w64-mingw32-gcc -O0 -g3 -fno-inline -funroll-loops -flto -ftree-vectorize src/main.c -o "build/windows/x86/Password Generator.exe"
@@ -44,7 +44,7 @@ if [ "$can_windows" == "true" ]; then
         echo "Failed to compile Windows x32 executable"
         exit 1
     else
-        zip -r -9 build/windows-x86.zip build/linux/x86/Password\ Generator
+        zip -r -9 build/windows-x86.zip build/windows/x86/Password\ Generator.exe
     fi
 fi
 
