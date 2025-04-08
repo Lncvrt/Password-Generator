@@ -4,7 +4,7 @@ A cross-platform password generator written in C, designed for both Windows and 
 
 ## Building
 
-### On Linux:
+### On Linux
 
 To build the application, run the `build.sh` script. It will generate executables for both Linux and Windows in the `build/` directory.
 
@@ -14,12 +14,12 @@ To build the application, run the `build.sh` script. It will generate executable
 
 If it fails, install the required dependencies.
 
-```
+```bash
 sudo apt update
-sudo apt install -y build-essential gcc mingw-w64 zip
+sudo apt install -y build-essential gcc gcc-multilib mingw-w64 zip
 ```
 
-### Manually (if not using `build.sh`):
+### Manually (if not using `build.sh`)
 
 You can manually compile the application on Linux with the following steps:
 
